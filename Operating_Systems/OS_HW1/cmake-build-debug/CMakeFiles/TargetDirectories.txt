@@ -1,0 +1,3 @@
+C:/Users/aviv0/OneDrive/שולחן העבודה/סמסטר ד/מערכות הפעלה/HW1/OS_HW1/cmake-build-debug/CMakeFiles/OS_HW1.dir
+C:/Users/aviv0/OneDrive/שולחן העבודה/סמסטר ד/מערכות הפעלה/HW1/OS_HW1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/aviv0/OneDrive/שולחן העבודה/סמסטר ד/מערכות הפעלה/HW1/OS_HW1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

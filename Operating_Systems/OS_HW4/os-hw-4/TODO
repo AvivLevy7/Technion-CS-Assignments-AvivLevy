@@ -1,0 +1,6 @@
+If mmap-data is called to srealloc with smaller size, should I still realocate?
+Do I need to round to the next page size, or maybe only for statistics? (works without)
+If huge page mapping fails, do I need to try again without MAP_HUGETLB?
+The "equal-to or large" in malloc vs "larger" in calloc is intentional?
+
+Run and test things, specifically in VM instead of WSL.

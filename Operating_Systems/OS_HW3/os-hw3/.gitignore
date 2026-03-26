@@ -1,0 +1,7 @@
+*.o
+.vscode
+.vscode-ctags
+client
+server
+*.cgi
+public/*.cgi

@@ -1,0 +1,3 @@
+C:/EyalTiben/university/semester_C/data structures/data structure 1/cmake-build-debug/CMakeFiles/data_structure_1.dir
+C:/EyalTiben/university/semester_C/data structures/data structure 1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/EyalTiben/university/semester_C/data structures/data structure 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

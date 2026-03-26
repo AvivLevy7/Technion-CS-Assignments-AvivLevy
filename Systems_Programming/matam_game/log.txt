@@ -1,0 +1,388 @@
+* commit 0cf5f273e508f40ceb3de6c6b93f809f57d9b90a
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Sun Aug 18 22:03:44 2024 +0300
+| 
+|     more tests
+| 
+|  .gitmodules               |   6 ++++
+|  Events/Event.cpp          |  41 +++++++++++++++++++++++
+|  Events/Event.h            |  64 +++++------------------------------
+|  Events/Monster.cpp        |  12 +++++--
+|  Events/Monster.h          |   7 +++-
+|  Events/MonsterFactory.cpp |  44 ------------------------
+|  Events/MonsterFactory.h   |  37 ---------------------
+|  MatamStory                | Bin 457008 -> 452736 bytes
+|  MatamStory.cpp            |  79 +++++++++++++++++++++-----------------------
+|  MatamStory.h              |   1 +
+|  Players/Job.h             |   2 +-
+|  Utilities.cpp             |   1 -
+|  Utilities.h               |   2 +-
+|  13 files changed, 110 insertions(+), 186 deletions(-)
+| 
+* commit dca334662f4fbb3d81867e0cf695bcf1a2bfc419
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Sun Aug 18 19:36:34 2024 +0300
+| 
+|     running tests
+| 
+|  Events/Event.h            |  46 +++++++++--
+|  Events/Monster.cpp        |  38 +++++----
+|  Events/Monster.h          |  17 ++--
+|  Events/MonsterFactory.cpp |   4 +-
+|  Events/MonsterFactory.h   |   4 +-
+|  MatamStory                | Bin 0 -> 457008 bytes
+|  MatamStory.cpp            | 188 +++++++++++++++++++-------------------------
+|  MatamStory.h              |  11 ++-
+|  Players/Character.h       |  12 +--
+|  Players/Job.h             |  67 +++++++---------
+|  Players/Player.cpp        |  30 +++----
+|  Players/Player.h          |  51 ++++--------
+|  Utilities.cpp             |   1 +
+|  Utilities.h               |   2 +-
+|  test1.out                 |  96 ++++++++++++++++++++++
+|  test2.out                 |   1 +
+|  tests/test4.events        |   5 ++
+|  tests/test4.players       |   3 +
+|  18 files changed, 332 insertions(+), 244 deletions(-)
+| 
+* commit 2f8ca792fd3d5499b7318cf1047a3f5a52780298
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Thu Aug 15 17:49:15 2024 +0300
+| 
+|     conflicts
+| 
+|  Events/Event.h            | 17 +++++------------
+|  Events/Monster.cpp        |  6 +++---
+|  Events/MonsterFactory.cpp | 24 ++++++++++++------------
+|  Events/MonsterFactory.h   | 20 ++++++++++----------
+|  MatamStory.cpp            | 14 +++++++++++---
+|  Players/Player.cpp        |  4 ++++
+|  6 files changed, 45 insertions(+), 40 deletions(-)
+| 
+* commit e5f80dc2c225e22121de38bc9f5255fa729b3e56
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Thu Aug 15 17:46:20 2024 +0300
+| 
+|     15
+| 
+|  Events/Monster.cpp |  8 ++------
+|  MatamStory.cpp     | 13 +++++--------
+|  MatamStory.h       |  4 ++--
+|  3 files changed, 9 insertions(+), 16 deletions(-)
+| 
+* commit 62807e074e60f7d33234e5e9210588aaa60b59fe
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Thu Aug 15 16:40:00 2024 +0300
+| 
+|     conflicts
+| 
+|  Events/Monster.cpp | 65 +++++++++++++++++++++++++++++++++++++++++++++++++++-
+|  Events/Monster.h   |  1 +
+|  MatamStory.cpp     |  1 +
+|  Players/Job.h      | 24 +++++++++++++++++--
+|  Players/Player.cpp | 16 +++++++++++++
+|  Players/Player.h   |  3 +++
+|  6 files changed, 107 insertions(+), 3 deletions(-)
+| 
+* commit c8821b29a629f4c71d437e44a82c3d82e5a23ca7
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Wed Aug 14 22:07:16 2024 +0300
+| 
+|     encounter
+| 
+|  Players/Job.h | 4 ++++
+|  1 file changed, 4 insertions(+)
+| 
+* commit cda2dc348df62f24aa05cdfdaa5b4a5e7b18fdf7
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Thu Aug 15 16:34:57 2024 +0300
+| 
+|     11
+| 
+|  CMakeLists.txt                                    |  4 +-
+|  Events/Event.h                                    | 16 ++--
+|  Events/EventFactory.h                             |  1 -
+|  Monster.cpp => Events/Monster.cpp                 |  6 +-
+|  Events/Monster.h                                  | 12 +--
+|  Events/MonsterFactory.cpp                         | 18 ++++-
+|  Events/MonsterFactory.h                           |  8 +-
+|  MatamStory.cpp                                    | 86 +++++++++++++++------
+|  MatamStory.h                                      |  9 ++-
+|  Players/Character.h                               | 23 +++---
+|  Players/Player.cpp                                |  2 +-
+|  Players/Player.h                                  | 17 ++--
+|  Utilities.h                                       |  1 +
+|  ...son => codemodel-v2-0dca79f32e362c287a9a.json} |  2 +-
+|  ...5.json => index-2024-08-15T11-55-10-0889.json} |  4 +-
+|  ...get-matam_HW4-Debug-622a13e75394784aea67.json} | 10 +--
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |  4 +
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |  4 +-
+|  cmake-build-debug/build.ninja                     |  8 +-
+|  19 files changed, 147 insertions(+), 88 deletions(-)
+| 
+* commit 8d7a4ce731cc7ccbe4539e06c162f142a8fa7fc0
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Wed Aug 14 21:59:22 2024 +0300
+| 
+|     0
+| 
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt | 4 ----
+|  1 file changed, 4 deletions(-)
+| 
+* commit b0deb320b5484009613da4596031ec6bc3a96db2
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Wed Aug 14 21:56:21 2024 +0300
+| 
+|     yee
+| 
+|  Players/Player.h                                                    | 2 +-
+|  ...08-14T17-50-56-0467.json => index-2024-08-14T18-44-24-0615.json} | 0
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt                    | 4 ++++
+|  cmake-build-debug/Testing/Temporary/LastTest.log                    | 4 ++--
+|  4 files changed, 7 insertions(+), 3 deletions(-)
+| 
+* commit 4442c394173020b1c417e41aa365d6eba2445e33
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Wed Aug 14 21:32:06 2024 +0300
+| 
+|     oof
+| 
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt | 4 ----
+|  1 file changed, 4 deletions(-)
+| 
+* commit 704c955c048ec36f9ec54c2fd45c6160c707096e
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Wed Aug 14 22:04:22 2024 +0300
+| 
+|     5
+| 
+|  CMakeLists.txt                                    |  4 +-
+|  Events/Event.cpp                                  |  2 -
+|  Events/Event.h                                    | 28 +++++++---
+|  Events/EventFactory.h                             |  1 +
+|  Events/Monster.h                                  | 10 ++--
+|  MatamStory.cpp                                    |  4 +-
+|  Monster.cpp                                       |  2 +-
+|  ...son => codemodel-v2-a27ff55c832e4e7aad40.json} |  2 +-
+|  ...2.json => index-2024-08-14T17-50-56-0467.json} |  4 +-
+|  ...get-matam_HW4-Debug-fb7e591fde37ffae31ec.json} | 60 ++++++++++-----------
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |  2 +-
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |  4 +-
+|  cmake-build-debug/build.ninja                     |  9 +---
+|  13 files changed, 68 insertions(+), 64 deletions(-)
+| 
+* commit 3e433ebc7fc478b020a8013aef6fdcf037a14055
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Wed Aug 14 21:56:05 2024 +0300
+| 
+|     running
+| 
+|  Events/Event.h |  5 ++++-
+|  MatamStory.cpp | 23 ++++++++++++++++++++++-
+|  Players/Job.h  |  2 ++
+|  3 files changed, 28 insertions(+), 2 deletions(-)
+| 
+* commit 0e1bce7084e1a588876ebdd73216feca37c175ec
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Wed Aug 14 21:28:27 2024 +0300
+| 
+|     packs
+| 
+|  Events/Event.h |  1 +
+|  MatamStory.cpp | 33 +++++++++++++++++++++++++++++++--
+|  2 files changed, 32 insertions(+), 2 deletions(-)
+| 
+* commit aae2dfbe5d40069569f33923e2cbf0f073bbd7c3
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Wed Aug 14 19:26:24 2024 +0300
+| 
+|     conflicts
+| 
+|  Events/Event.h      | 24 ++++++++++++++++++++++
+|  MatamStory.cpp      | 45 ++++++++++++++++++++++++++++++++++++++---
+|  MatamStory.h        |  4 ++++
+|  Players/Character.h | 42 ++++++++++++++++++++++++++++++++++++---
+|  Players/Job.h       | 55 +++++++++++++++++++++++++++++++++++++++++++++++----
+|  Players/Player.cpp  | 44 +++++++++++++++++++++++++++++++++++++++--
+|  Players/Player.h    | 12 +++++++++--
+|  7 files changed, 212 insertions(+), 14 deletions(-)
+| 
+* commit 54f1429d5683adc2aef00ba8f8c676d851d1bec3
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Mon Aug 12 19:32:41 2024 +0300
+| 
+|     changes
+| 
+|  MatamStory.cpp | 6 +++---
+|  1 file changed, 3 insertions(+), 3 deletions(-)
+| 
+* commit 5bf8cee3f9e7d7e81d30659fbfd93dabf8044653
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Wed Aug 14 19:17:07 2024 +0300
+| 
+|     mid
+| 
+|  CMakeLists.txt                                    |  6 +-
+|  Events/Monster.h                                  | 48 ++++++++++--
+|  Events/MonsterFactory.cpp                         | 26 +++++++
+|  Events/MonsterFactory.h                           | 31 ++++++++
+|  MatamStory.cpp                                    |  1 -
+|  MatamStory.h                                      |  1 +
+|  Monster.cpp                                       | 83 +++++++++++++++++++++
+|  Players/Player.h                                  |  3 +
+|  ...son => codemodel-v2-74ead3cdcf6abcd8fddd.json} |  2 +-
+|  ...9.json => index-2024-08-14T13-05-30-0612.json} |  4 +-
+|  ...get-matam_HW4-Debug-765d9836b12b5e8baba2.json} | 36 ++++++++-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |  4 +
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |  4 +-
+|  cmake-build-debug/build.ninja                     | 23 +++++-
+|  14 files changed, 256 insertions(+), 16 deletions(-)
+| 
+* commit ace72e46e8c38b5157075af6b361b9565b65721f
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Mon Aug 12 19:18:22 2024 +0300
+| 
+|     8
+| 
+|  .idea/matam_HW4.iml | 2 ++
+|  1 file changed, 2 insertions(+)
+| 
+* commit 4a052e1b52adf347857399d029162f2be0da3193
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Mon Aug 12 19:17:23 2024 +0300
+| 
+|     5
+| 
+|  .idea/misc.xml | 6 ++++++
+|  1 file changed, 6 insertions(+)
+| 
+* commit aee38d92604deeaba266c09cd69751a777ba46c6
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Mon Aug 12 19:14:00 2024 +0300
+| 
+|     5
+| 
+|  .idea/matam_HW4.iml                              |  8 --------
+|  Events/Event.h                                   |  1 +
+|  Events/Monster.h                                 | 10 +++++-----
+|  MatamStory.h                                     |  6 +++++-
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt |  4 ----
+|  5 files changed, 11 insertions(+), 18 deletions(-)
+| 
+* commit 9e8f05a6bdec2271da22e3a97d5a78a62c63046e
+| Author: AvivLevy7 <aviv02034@gmail.com>
+| Date:   Mon Aug 12 17:16:02 2024 +0300
+| 
+|     1
+| 
+|  .idea/.gitignore                                  |    8 +
+|  .idea/matam_HW4.iml                               |    8 +
+|  .idea/modules.xml                                 |    8 +
+|  .idea/vcs.xml                                     |    6 +
+|  CMakeLists.txt                                    |   19 +
+|  Events/Event.cpp                                  |    2 +
+|  Events/Event.h                                    |   10 +
+|  Events/Monster.h                                  |   23 +
+|  Players/Character.h                               |   19 +
+|  Players/Job.h                                     |   21 +
+|  Players/Player.h                                  |    1 +
+|  cmake-build-debug/.cmake/api/v1/query/cache-v2    |    0
+|  .../.cmake/api/v1/query/cmakeFiles-v1             |    0
+|  .../.cmake/api/v1/query/codemodel-v2              |    0
+|  .../.cmake/api/v1/query/toolchains-v1             |    0
+|  .../v1/reply/cache-v2-12da4e516b0ad349fe14.json   | 1327 +++++++++++++++++++
+|  .../reply/cmakeFiles-v1-af7c37dd174c4d10105d.json |  165 +++
+|  .../reply/codemodel-v2-cd01b52562e1b065da81.json  |   60 +
+|  .../directory-.-Debug-d0094a50bb2071803777.json   |   14 +
+|  .../v1/reply/index-2024-08-12T14-08-08-0899.json  |  108 ++
+|  ...rget-matam_HW4-Debug-f5862e70378213ca6579.json |  198 +++
+|  .../reply/toolchains-v1-471bce94bfe13a5ea4fc.json |   93 ++
+|  cmake-build-debug/CMakeCache.txt                  |  415 ++++++
+|  .../CMakeFiles/3.27.8/CMakeCCompiler.cmake        |   74 ++
+|  .../CMakeFiles/3.27.8/CMakeCXXCompiler.cmake      |   85 ++
+|  .../3.27.8/CMakeDetermineCompilerABI_C.bin        |  Bin 0 -> 43069 bytes
+|  .../3.27.8/CMakeDetermineCompilerABI_CXX.bin      |  Bin 0 -> 43088 bytes
+|  .../CMakeFiles/3.27.8/CMakeRCCompiler.cmake       |    6 +
+|  .../CMakeFiles/3.27.8/CMakeSystem.cmake           |   15 +
+|  .../3.27.8/CompilerIdC/CMakeCCompilerId.c         |  866 ++++++++++++
+|  .../CMakeFiles/3.27.8/CompilerIdC/a.exe           |  Bin 0 -> 43144 bytes
+|  .../3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp   |  855 ++++++++++++
+|  .../CMakeFiles/3.27.8/CompilerIdCXX/a.exe         |  Bin 0 -> 43172 bytes
+|  .../CMakeFiles/CMakeConfigureLog.yaml             |  417 ++++++
+|  .../CMakeFiles/TargetDirectories.txt              |    3 +
+|  cmake-build-debug/CMakeFiles/clion-Debug-log.txt  |    4 +
+|  .../CMakeFiles/clion-environment.txt              |  Bin 0 -> 236 bytes
+|  cmake-build-debug/CMakeFiles/cmake.check_cache    |    1 +
+|  cmake-build-debug/CMakeFiles/rules.ninja          |   64 +
+|  cmake-build-debug/Testing/Temporary/LastTest.log  |    3 +
+|  cmake-build-debug/build.ninja                     |  161 +++
+|  cmake-build-debug/cmake_install.cmake             |   49 +
+|  42 files changed, 5108 insertions(+)
+| 
+* commit c3ce19da20e99c11f80e382b826950d2c8b59592
+| Author: natanr2000 <natanr@campus.technion.ac.il>
+| Date:   Mon Aug 12 18:53:07 2024 +0300
+| 
+|     creating Player
+| 
+|  MatamStory.cpp     | 23 ++++++++++++++++-------
+|  MatamStory.h       |  4 ++++
+|  Players/Player.cpp | 34 ++++++++++++++++++++++++++++++++++
+|  Players/Player.h   | 19 +++++++++++++++++++
+|  4 files changed, 73 insertions(+), 7 deletions(-)
+| 
+* commit ba0b3459f0f82d3907c4e294da2bff54ad0ad1c3
+| Author: Adi Harif <adi.harif@campus.technion.ac.il>
+| Date:   Sun Aug 4 19:43:54 2024 +0300
+| 
+|     [bugfix] Changes utilities function to iterate over size_t variable instead of unsigned int
+| 
+|  Utilities.cpp | 6 +++---
+|  1 file changed, 3 insertions(+), 3 deletions(-)
+| 
+* commit ecc9258c6f2aa2c9c091a7738587e206586a1c14
+| Author: Adi Harif <adi.harif@campus.technion.ac.il>
+| Date:   Sun Aug 4 08:16:59 2024 +0300
+| 
+|     [format] Changes tests eol format to LF instead of CRLF
+| 
+|  tests/test1.events  | 8 ++++----
+|  tests/test1.players | 4 ++--
+|  tests/test2.events  | 6 +++---
+|  tests/test2.players | 4 ++--
+|  tests/test3.events  | 8 ++++----
+|  tests/test3.players | 2 +-
+|  6 files changed, 16 insertions(+), 16 deletions(-)
+| 
+* commit 6d0b58bcecef6fc2291c09f654a978cc382c3e31
+| Author: AdiHarif <adi.harif@campus.technion.ac.il>
+| Date:   Mon Jul 29 21:47:45 2024 +0300
+| 
+|     Adds supplied files
+| 
+|  Events/Event.h       |  14 +++++
+|  MatamStory.cpp       |  74 +++++++++++++++++++++++++
+|  MatamStory.h         |  55 +++++++++++++++++++
+|  Players/Player.h     |  51 +++++++++++++++++
+|  Utilities.cpp        | 117 +++++++++++++++++++++++++++++++++++++++
+|  Utilities.h          | 146 +++++++++++++++++++++++++++++++++++++++++++++++++
+|  main.cpp             |  40 ++++++++++++++
+|  tests/test1.events   |   5 ++
+|  tests/test1.expected |  96 ++++++++++++++++++++++++++++++++
+|  tests/test1.players  |   3 +
+|  tests/test2.events   |   4 ++
+|  tests/test2.expected |   1 +
+|  tests/test2.players  |   3 +
+|  tests/test3.events   |   5 ++
+|  tests/test3.expected |   1 +
+|  tests/test3.players  |   2 +
+|  16 files changed, 617 insertions(+)
+| 
+* commit beadb33ed4c7dd2da9d4078b9de6253232c67a46
+  Author: AdiHarif <adi.harif@campus.technion.ac.il>
+  Date:   Mon Jul 29 21:46:59 2024 +0300
+  
+      Initial Commit - Adds README.md file
+  
+   README.md | 7 +++++++
+   1 file changed, 7 insertions(+)

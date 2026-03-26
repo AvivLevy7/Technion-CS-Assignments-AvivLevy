@@ -1,0 +1,3 @@
+C:/Users/aviv0/OneDrive/שולחן העבודה/HomeWork 4/matam_HW4/cmake-build-debug/CMakeFiles/matam_HW4.dir
+C:/Users/aviv0/OneDrive/שולחן העבודה/HomeWork 4/matam_HW4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/aviv0/OneDrive/שולחן העבודה/HomeWork 4/matam_HW4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

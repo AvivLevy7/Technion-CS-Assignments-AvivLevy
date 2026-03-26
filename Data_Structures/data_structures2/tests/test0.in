@@ -1,0 +1,15 @@
+add_team 1
+add_team 2
+add_jockey 1 1
+add_jockey 2 2
+update_match 1 2
+get_team_record 1
+get_jockey_record 2
+merge_teams 1 2
+add_team 3
+add_jockey 3 3
+update_match 2 3
+get_team_record 3
+get_jockey_record 2
+unite_by_record 1
+get_team_record 1
